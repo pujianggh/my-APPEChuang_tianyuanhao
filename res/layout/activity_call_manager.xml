@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/base_title"/>
+    
+    <TextView 
+        android:layout_marginTop="0dp"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_call_manager"
+        android:gravity="center_horizontal"
+        android:lines="2"
+        android:textSize="@dimen/textsize_title"
+        android:textColor="@color/orange"
+        android:paddingBottom="@dimen/spacing_normal"
+        />
+    
+    <LinearLayout 
+        android:layout_weight="1"
+        android:background="#272829"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ll_call_manager"
+        
+        >
+        <ImageView 
+            android:layout_marginTop="@dimen/spacing_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_call_manager"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/reddoor"
+            />
+        <TextView
+            android:textColor="@color/orange" 
+            android:layout_marginTop="@dimen/spacing_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_conpany_address"
+           	android:text="housrton"
+           	android:layout_gravity="center_horizontal"
+            />
+        <TextView 
+            android:textColor="@color/orange" 
+            android:layout_marginTop="@dimen/spacing_max"
+            android:layout_marginLeft="@dimen/spacing_max"
+            android:layout_marginRight="@dimen/spacing_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_conpany_introdution"
+           	android:text="					你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊"
+           	android:layout_gravity="center_horizontal"
+           	android:layout_marginBottom="@dimen/spacing_max"
+            />
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:paddingTop="@dimen/spacing_max"
+        android:paddingBottom="@dimen/spacing_max"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_call_method"
+        >
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            >
+            <ImageView
+                android:layout_centerVertical="true" 
+                android:id="@+id/iv_call_method"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/call_small"
+                />
+            <TextView 
+                android:layout_marginLeft="@dimen/spacing_min"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@+id/iv_call_method"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话: 832-539-1099"
+                />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            >
+            <ImageView
+                android:layout_centerVertical="true" 
+                android:id="@+id/iv_call_method1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/message_small"
+                />
+            <TextView 
+                android:layout_marginLeft="@dimen/spacing_min"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@+id/iv_call_method1"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邮箱: 832-539-1099"
+                />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            >
+            <ImageView
+                android:layout_centerVertical="true" 
+                android:id="@+id/iv_call_method2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/address_small"
+                />
+            <TextView
+                android:layout_marginLeft="@dimen/spacing_min"
+                android:textColor="@color/white" 
+                android:layout_toRightOf="@+id/iv_call_method2"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址: 832-539-1099"
+                />
+        </RelativeLayout>
+        
+        
+    </LinearLayout>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:gravity="center"
+        android:text="TIANYUANHAO"
+        android:background="@color/orange"
+        />  
+
+</LinearLayout>

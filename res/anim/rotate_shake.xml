@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <rotate
+        android:duration="60"
+        android:fromDegrees="-15"
+        android:pivotX="60%"
+        android:pivotY="50%"
+        android:repeatCount="14"
+        android:repeatMode="reverse"
+        android:toDegrees="15" />
+
+    <!--android:repeatCount="infinite"-->
+</set>

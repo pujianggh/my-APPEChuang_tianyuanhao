@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        layout="@layout/title_button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <ProgressBar
+            android:id="@+id/mProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/text_brown"
+            android:progressDrawable="@drawable/progress_bar_drawable"
+            android:visibility="gone" >
+        </ProgressBar>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.echuang.tianyuanhao.listview.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include layout="@layout/layout_refresh_head_none" />
+            <!-- 支持所有实现Pullable接口的View -->
+
+            <com.echuang.tianyuanhao.view.CustomWebView
+                android:id="@+id/webView_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+        </com.echuang.tianyuanhao.listview.PullToRefreshLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/layout_loadingfailed"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <include
+        android:id="@+id/layout_unlogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_unlogin"
+        android:visibility="gone" />
+
+</LinearLayout>

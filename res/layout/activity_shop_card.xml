@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/base_title"
+        android:id="@+id/basetitle_shop_card"
+        />
+
+    <TextView
+        android:layout_below="@+id/basetitle_shop_card"
+        android:id="@+id/tv_shop_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/spacing_min"
+        android:layout_marginTop="@dimen/spacing_min"
+        android:text="你已添加到海外资产"
+        android:textSize="@dimen/textsize_normal" />
+
+    <ListView
+        android:id="@+id/lv_shop_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_shop_item_title"
+        android:layout_marginBottom="170dp" >
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:padding="@dimen/spacing_min"
+            android:background="#66ECEEF3"
+            android:id="@+id/tv_shop_item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="你的预期收益分析"
+            android:textSize="@dimen/textsize_little" />
+
+        <LinearLayout
+            android:id="@+id/ll_shop_item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_shop_item1"
+            android:layout_marginBottom="@dimen/spacing_min"
+            android:layout_marginTop="@dimen/spacing_min"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_month_rent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="总售价" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_month_rent"
+                    android:layout_centerHorizontal="true"
+                    android:text="$851"
+                    android:textSize="@dimen/spacing_larger" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/spacing_min"
+                android:layout_marginTop="@dimen/spacing_min"
+                android:background="@color/text_lightgray"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_uprate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="总月租金" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_uprate"
+                    android:layout_centerHorizontal="true"
+                    android:text="$536"
+                    android:textSize="@dimen/spacing_larger" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/spacing_min"
+                android:layout_marginTop="@dimen/spacing_min"
+                android:background="@color/text_lightgray"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_rentup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="总预计年收益" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_rentup"
+                    android:layout_centerHorizontal="true"
+                    android:text="$7709"
+                    android:textSize="@dimen/spacing_larger" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_shop_item"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/ll_shop_item1"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@color/text_lightgray"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/spacing_min"
+            android:id="@+id/ll_shop_item2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_shop_item"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_month_rent1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="平均毛回报率" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_month_rent1"
+                    android:layout_centerHorizontal="true"
+                    android:text="10%"
+                    android:textSize="@dimen/spacing_larger" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/spacing_min"
+                android:layout_marginTop="@dimen/spacing_min"
+                android:background="@color/text_lightgray"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_rentup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="平均净回报率" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_rentup1"
+                    android:layout_centerHorizontal="true"
+                    android:text="3%"
+                    android:textSize="@dimen/spacing_larger" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_shop_item2"
+            android:background="@color/orange"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_little" />
+    </RelativeLayout>
+
+</RelativeLayout>

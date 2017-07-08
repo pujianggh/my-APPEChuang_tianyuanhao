@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 颜色集合 -->
+    <color name="pic_gray">#b6b6b6</color>
+    <color name="pic_text_gray">#b6b6b6</color>
+    <color name="pic_text_orange">#e4ab34</color>
+    <color name="pic_text_orange_gray">#6e6960</color>
+    <color name="pic_gray_bg">#4a4a4a</color>
+
+    <!-- 按钮颜色集 -->
+    <color name="button_tab_normal">#555555</color>
+    <color name="button_tab_pressed">#4c4c4c</color>
+    <color name="white">#fffffffe</color>
+    <color name="black">#000000</color>
+    <color name="green">#14b630</color>
+    <color name="light_green">#e3efe3</color>
+    <color name="light_blue">#6593cb</color>
+    <color name="light_purple">#a76bd1</color>
+    <color name="trans">#00000001</color>
+    <!-- ==========配色========= -->
+    <color name="title_bg">#323232</color>
+    <color name="button_blue">#466E96</color>
+    <color name="button_gray">#CCCCCC</color>
+    <color name="text_color_gray">#7d7d7dff</color>
+    <color name="text_hint_color_gray">#EBEBEB</color>
+    <color name="transparent">#00000000</color>
+    <!-- 字体蓝色 -->
+    <color name="text_blue">#466E96</color>
+    <!-- 字体棕色 -->
+    <color name="text_brown">#967D64</color>
+    <!-- 字体灰色 -->
+    <color name="text_lightgray">#EBEBEB</color>
+    <color name="item_gray">#EFEFF6</color>
+    <!-- 字体深灰 -->
+    <color name="text_gray">#7D7D7D</color>
+    <!-- 字体深黑 -->
+    <color name="text_deepgray">#323232</color>
+
+    <!-- 背景灰底： -->
+    <color name="light_gray">#F4F4F4</color>
+    <!-- 块按下的颜色 -->
+    <color name="item_pressed">#0d000000</color>
+    <!-- 图片 -->
+    <color name="image_pressed">#1a000000</color>
+    <!-- 文字颜色 -->
+    <color name="text_white">#ffffffff</color>
+    <color name="text_black">#000000</color>
+    <!-- 字体橘色 -->
+    <color name="text_orange">#f5a623</color>
+    <!-- 字体橘色 -->
+    <color name="orange">#f5a623</color>
+    <!-- 1px分隔线 -->
+    <color name="line_light">#e9e9e9</color>
+    <color name="line_dark">#cfcfcf</color>
+    <color name="text_light_brown">#c8aa78</color>
+    <!-- 输入框hint -->
+    <color name="text_hint">#b2b2b2</color>
+    <!-- 设置头像 -->
+    <color name="bella_ios_like_item_blue">#007AFF</color>
+    <color name="bella_ios_like_item_blue_light">#B2D7FF</color>
+    <color name="bella_color_black_dark">#2B2B2B</color>
+
+</resources>

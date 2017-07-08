@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:counter="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@null" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp" >
+
+            <com.echuang.tianyuanhao.view.LiBaoBrokenLineView
+                android:id="@+id/lb_broken_line"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="70dp"
+                android:visibility="gone" >
+            </com.echuang.tianyuanhao.view.LiBaoBrokenLineView>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/lb_ivbg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_home_main_headbg" />
+
+        <ImageView
+            android:id="@+id/igv_add"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_home_image_add" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lb_tv1"
+                style="@style/common_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="您的资产"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:id="@+id/lb_tv2"
+                style="@style/common_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="$128,120M"
+                android:textColor="@color/pic_text_orange"
+                android:textSize="@dimen/textsize_large"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lb_tv3"
+                style="@style/common_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="资产总值"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:id="@+id/lb_tv4"
+                style="@style/common_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="8.8%"
+                android:textColor="@color/pic_text_orange"
+                android:textSize="@dimen/textsize_large"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp" >
+
+            <Button
+                android:id="@+id/btn_tab1"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_tab_left_white"
+                android:button="@null"
+                android:gravity="center"
+                android:text="资  产"
+                android:textColor="@drawable/selector_textcolor_whitetr"
+                android:textSize="@dimen/textsize_min" />
+
+            <Button
+                android:id="@+id/btn_tab2"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_tab_right_white"
+                android:button="@null"
+                android:gravity="center"
+                android:text="收  入"
+                android:textColor="@drawable/selector_textcolor_whitetr"
+                android:textSize="@dimen/textsize_min" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

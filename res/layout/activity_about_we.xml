@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_about_we"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+    <!--
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_bigone"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bigone" />
+
+            <ImageView
+                android:id="@+id/iv_bigtwo"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bigtwo" />
+
+            <ImageView
+                android:id="@+id/iv_bigthree"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bigthree" />
+
+            <ImageView
+                android:id="@+id/iv_bigfore"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bigfore" />
+        </LinearLayout>
+    </ScrollView>
+    -->
+
+</LinearLayout>

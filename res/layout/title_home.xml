@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@null" >
+
+        <ImageView
+            android:id="@+id/igv_left"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="#0000"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_home_company_icon" />
+
+        <TextView
+            android:id="@+id/textView_title"
+            style="@style/custom_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/igv_right"
+            android:layout_toRightOf="@+id/igv_left"
+            android:background="@drawable/ic_home_search_bg"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/t_search_title"
+            android:textColor="@color/pic_text_gray"
+            android:textSize="@dimen/textsize_little" />
+
+        <ImageView
+            android:id="@+id/igv_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#0000"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_home_search" />
+    </RelativeLayout>
+
+</LinearLayout>

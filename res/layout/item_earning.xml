@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/spacing_pading_min"
+    android:paddingRight="@dimen/spacing_pading_min" >
+
+    <LinearLayout
+        android:id="@+id/lly_add"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/button_item_graybg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_button_add_house" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="添加您的海外房产"
+            android:textColor="@color/pic_text_orange"
+            android:textSize="@dimen/textsize_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lly_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_item_graybg"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@null"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/img_houses"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/fang" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="@null"
+                            android:contentDescription="@null"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_image_dd" />
+
+                        <TextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="@string/app_name"
+                            android:textColor="@color/text_deepgray"
+                            android:textSize="@dimen/textsize_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp" >
+
+                        <TextView
+                            android:id="@+id/tv_rent_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_image_zl"
+                            android:drawablePadding="2dp"
+                            android:gravity="left"
+                            android:text="3"
+                            android:textColor="@color/text_gray"
+                            android:textSize="@dimen/textsize_min" />
+
+                        <TextView
+                            android:id="@+id/tv_squar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_image_mj"
+                            android:drawablePadding="2dp"
+                            android:gravity="left"
+                            android:text="120㎡"
+                            android:textColor="@color/text_gray"
+                            android:textSize="@dimen/textsize_min" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:textColor="@color/text_gray"
+                            android:textSize="@dimen/textsize_min" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="0dp" >
+
+                        <TextView
+                            android:id="@+id/tv_bedroom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_image_ws"
+                            android:drawablePadding="2dp"
+                            android:gravity="left"
+                            android:text="3卧室"
+                            android:textColor="@color/text_gray"
+                            android:textSize="@dimen/textsize_min" />
+
+                        <TextView
+                            android:id="@+id/tv_bathroom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_image_ys"
+                            android:drawablePadding="2dp"
+                            android:gravity="left"
+                            android:text="2浴室"
+                            android:textColor="@color/text_gray"
+                            android:textSize="@dimen/textsize_min" />
+
+                        <TextView
+                            android:id="@+id/tv_stall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_image_cw"
+                            android:drawablePadding="2dp"
+                            android:gravity="left"
+                            android:text="2车位"
+                            android:textColor="@color/text_gray"
+                            android:textSize="@dimen/textsize_min" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@color/text_lightgray"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:background="@null"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="1dp"
+                    android:drawableRight="@drawable/ic_image_wh"
+                    android:gravity="center"
+                    android:text="购入价"
+                    android:textColor="@color/text_gray" />
+
+                <TextView
+                    
+                    android:id="@+id/tv_price"
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$127,000"
+                    android:textColor="@color/pic_text_orange"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/spacing_min"
+                android:layout_marginTop="@dimen/spacing_min"
+                android:background="@color/text_lightgray"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="1dp"
+                    android:drawableRight="@drawable/ic_image_wh"
+                    android:gravity="center"
+                    android:text="月租金"
+                    android:textColor="@color/text_gray" />
+
+                <TextView
+                    android:id="@+id/tv_monthly_rent"
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$8,719"
+                    android:textColor="@color/pic_text_orange"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/spacing_min"
+                android:layout_marginTop="@dimen/spacing_min"
+                android:background="@color/text_lightgray"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="1dp"
+                    android:drawableRight="@drawable/ic_image_wh"
+                    android:gravity="center"
+                    android:text="毛回报率"
+                    android:textColor="@color/text_gray" />
+
+                <TextView
+                    android:id="@+id/tv_return_rate"
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11.8%"
+                    android:textColor="@color/pic_text_orange"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

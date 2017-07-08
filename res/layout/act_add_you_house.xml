@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        layout="@layout/title_imagebutton" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/btn_submit"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/layout_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/icon_house_sl"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_min"
+                        android:text="所在国家"
+                        android:textColor="@color/text_deepgray"
+                        android:textSize="@dimen/textsize_normal" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:background="@null"
+                        android:hint="您的房源所在国家"
+                        android:padding="5dp"
+                        android:textSize="@dimen/textsize_normalplus" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="@dimen/spacing_normalplus"
+                        android:layout_marginRight="@dimen/spacing_normalplus"
+                        android:background="@color/line_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_min"
+                        android:text="地址"
+                        android:textColor="@color/text_deepgray"
+                        android:textSize="@dimen/textsize_normal" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:background="@null"
+                        android:hint="您的房源详细地址"
+                        android:padding="5dp"
+                        android:textSize="@dimen/textsize_normalplus" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="@dimen/spacing_normalplus"
+                        android:layout_marginRight="@dimen/spacing_normalplus"
+                        android:background="@color/line_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_min"
+                        android:text="购入价"
+                        android:textColor="@color/text_deepgray"
+                        android:textSize="@dimen/textsize_normal" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:background="@null"
+                        android:hint="您买入房产价格"
+                        android:padding="5dp"
+                        android:textSize="@dimen/textsize_normalplus" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="@dimen/spacing_normalplus"
+                        android:layout_marginRight="@dimen/spacing_normalplus"
+                        android:background="@color/line_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_min"
+                        android:text="出租状态"
+                        android:textColor="@color/text_deepgray"
+                        android:textSize="@dimen/textsize_normal" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:background="@null"
+                        android:hint="租赁中/未租赁"
+                        android:padding="5dp"
+                        android:textSize="@dimen/textsize_normalplus" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="@dimen/spacing_normalplus"
+                        android:layout_marginRight="@dimen/spacing_normalplus"
+                        android:background="@color/line_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_min"
+                        android:text="当前月租"
+                        android:textColor="@color/text_deepgray"
+                        android:textSize="@dimen/textsize_normal" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:background="@null"
+                        android:hint="租赁价格"
+                        android:padding="5dp"
+                        android:textSize="@dimen/textsize_normalplus" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="@dimen/spacing_normalplus"
+                        android:layout_marginRight="@dimen/spacing_normalplus"
+                        android:background="@color/line_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_min"
+                        android:text="建筑面积"
+                        android:textColor="@color/text_deepgray"
+                        android:textSize="@dimen/textsize_normal" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:background="@null"
+                        android:hint="您房屋的实际面积"
+                        android:padding="5dp"
+                        android:textSize="@dimen/textsize_normalplus" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="@dimen/spacing_normalplus"
+                        android:layout_marginRight="@dimen/spacing_normalplus"
+                        android:background="@color/line_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_min"
+                        android:text="竣工时间"
+                        android:textColor="@color/text_deepgray"
+                        android:textSize="@dimen/textsize_normal" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:background="@null"
+                        android:hint="您的房屋建成时间"
+                        android:padding="5dp"
+                        android:textSize="@dimen/textsize_normalplus" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="@dimen/spacing_normalplus"
+                        android:layout_marginRight="@dimen/spacing_normalplus"
+                        android:background="@color/line_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_min"
+                        android:text="描述信息"
+                        android:textColor="@color/text_deepgray"
+                        android:textSize="@dimen/textsize_normal" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:background="@null"
+                        android:hint="请给您房屋一个简单的评价"
+                        android:padding="5dp"
+                        android:textSize="@dimen/textsize_normalplus" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="@dimen/spacing_normalplus"
+                        android:layout_marginRight="@dimen/spacing_normalplus"
+                        android:background="@color/line_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_min"
+                        android:text="产权证明文件"
+                        android:textColor="@color/text_deepgray"
+                        android:textSize="@dimen/textsize_normal" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="@dimen/spacing_normalplus"
+                        android:background="@drawable/icon_addpic_unfocused"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+ 
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_bg_common"
+            android:gravity="center"
+            android:text="提 交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_normal" />
+    </RelativeLayout>
+
+</LinearLayout>

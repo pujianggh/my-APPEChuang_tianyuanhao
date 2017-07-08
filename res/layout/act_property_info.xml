@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        layout="@layout/title_imagebutton" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/spacing_min"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/fang" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/title_bg" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/spacing_normal" >
+
+                    <TextView
+                        style="@style/custom_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:singleLine="true"
+                        android:text="2510 3rd St"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/textsize_normalplus" />
+
+                    <TextView
+                        style="@style/custom_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:singleLine="true"
+                        android:text="Houston, USA"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/textsize_normalplus" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_myhome_info" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/common_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:gravity="center_vertical"
+                android:text="基本信息"
+                android:textColor="@color/text_orange"
+                android:textSize="@dimen/textsize_normalplus" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:drawablePadding="@dimen/spacing_pading_min"
+                    android:drawableRight="@drawable/ic_common_mark2"
+                    android:gravity="center_vertical"
+                    android:text="月租金"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="$851"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:drawablePadding="@dimen/spacing_pading_min"
+                    android:drawableRight="@drawable/ic_common_mark2"
+                    android:gravity="center_vertical"
+                    android:text="毛回报率"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="10.2%"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:drawablePadding="@dimen/spacing_pading_min"
+                    android:drawableRight="@drawable/ic_common_mark2"
+                    android:gravity="center_vertical"
+                    android:text="预期年收益率"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="$10,209"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:drawablePadding="@dimen/spacing_pading_min"
+                    android:drawableRight="@drawable/ic_common_mark2"
+                    android:gravity="center_vertical"
+                    android:text="预计净回报率"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="5.1%"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:drawablePadding="@dimen/spacing_pading_min"
+                    android:drawableRight="@drawable/ic_common_mark2"
+                    android:gravity="center_vertical"
+                    android:text="资产升值"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="5.0%"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <TextView
+                style="@style/common_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:layout_marginTop="@dimen/spacing_min"
+                android:gravity="center_vertical"
+                android:text="房产信息"
+                android:textColor="@color/text_orange"
+                android:textSize="@dimen/textsize_normalplus" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="房产编号"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="S562388"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="物业管理方"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="A.S Property Management"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="物业类型"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="独立户"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="住房面积"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="1189英尺"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="卧室"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="3间"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="浴室"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="1间"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="车位"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="1个"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="建筑时间"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="1951年"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="建筑年龄"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="50年"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="建筑结构"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="木结构"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="地上层数"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="2层"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <TextView
+                style="@style/common_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:layout_marginTop="@dimen/spacing_min"
+                android:gravity="center_vertical"
+                android:text="税务信息"
+                android:textColor="@color/text_orange"
+                android:textSize="@dimen/textsize_normalplus" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="房屋评估费"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="$4000"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="公证费"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="$300"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="交易税"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="$1002"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="登记费"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="$100"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="律师费"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="$200"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="产权调查费"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="$200"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <TextView
+                style="@style/common_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:layout_marginTop="@dimen/spacing_min"
+                android:gravity="center_vertical"
+                android:text="保险信息"
+                android:textColor="@color/text_orange"
+                android:textSize="@dimen/textsize_normalplus" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height" >
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="产权保险费"
+                    android:textSize="@dimen/textsize_normalplus" />
+
+                <TextView
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:gravity="center_vertical"
+                    android:text="$401"
+                    android:textColor="@color/text_deepgray"
+                    android:textSize="@dimen/textsize_normalplus" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

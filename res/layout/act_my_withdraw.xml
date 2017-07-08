@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        layout="@layout/title_imagebutton" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_larger"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_light" />
+
+            <TextView
+                style="@style/common_text_standard_style"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/spacing_min"
+                android:gravity="center"
+                android:text="可提现金额"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/textsize_min" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="8888"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/textsize_min" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/common_text_standard_style"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:text="当前余额:"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/textsize_min" />
+
+                <TextView
+                    style="@style/common_text_standard_style"
+                    android:gravity="center"
+                    android:text="维修基金:"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/textsize_min" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_larger"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/common_text_standard_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="银行卡"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/textsize_normal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/common_text_standard_style"
+                        android:gravity="center"
+                        android:text="渣打银行 (尾号8888)"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/textsize_normal" />
+
+                    <TextView
+                        style="@style/common_text_standard_style"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="提醒到渣打银行,手续费为0.1%"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/textsize_min" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/common_text_standard_style"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="更改"
+                    android:textColor="@color/pic_text_orange"
+                    android:textSize="@dimen/textsize_min" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/common_text_standard_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="提醒金额"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/textsize_normal" />
+
+                <EditText
+                    style="@style/common_text_standard_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="$"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_title" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_light" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/common_text_standard_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="明天24:00前到账"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/textsize_min" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_min"
+            android:layout_marginBottom="@dimen/button_height"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_button_pressed"
+            android:gravity="center"
+            android:text="提醒"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_little" />
+    </LinearLayout>
+
+</LinearLayout>

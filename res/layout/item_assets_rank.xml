@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/spacing_min"
+        android:paddingTop="@dimen/spacing_min" >
+
+        <LinearLayout
+            android:id="@+id/lly_rank"
+            android:layout_width="@dimen/spacing_max"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_normalplus"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_num_1"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_code"
+                style="@style/common_text_standard_style"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_normalplus"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/common_text_standard_style"
+            android:layout_toRightOf="@+id/lly_rank"
+            android:singleLine="true"
+            android:text="152******90"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/textsize_normalplus" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            style="@style/common_text_standard_style"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/spacing_normalplus"
+            android:singleLine="true"
+            android:text="$778,823,000"
+            android:textColor="@color/pic_text_orange"
+            android:textSize="@dimen/textsize_normalplus" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/spacing_larger"
+        android:layout_marginRight="@dimen/spacing_larger"
+        android:background="@color/line_light" />
+
+</LinearLayout>

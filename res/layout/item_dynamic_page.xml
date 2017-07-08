@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@null" >
+
+        <ImageView
+            android:id="@+id/img_houses"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:layout_marginBottom="@dimen/spacing_min"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="房产-房价信息展示"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="2016年08月26日"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_min" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

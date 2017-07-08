@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_normalplus"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_min"
+            android:layout_marginLeft="@dimen/button_height"
+            android:layout_marginRight="@dimen/button_height"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/ic_edit_login_bg"
+            android:gravity="center"
+            android:hint="@string/t_search_input_keyinfo"
+            android:singleLine="true"
+            android:textColor="@color/pic_text_orange"
+            android:textColorHint="@color/pic_text_orange"
+            android:textSize="@dimen/textsize_little" />
+
+        <TextView
+            style="@style/common_text_standard_style"
+            android:layout_marginTop="@dimen/spacing_normalplus"
+            android:text="@string/t_search_country_select"
+            android:textSize="@dimen/textsize_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/edittext_min"
+            android:paddingRight="@dimen/edittext_min" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/igv_country_usa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/spacing_max"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_search_country_usa_pressed" />
+
+                <TextView
+                    style="@style/common_text_standard_style"
+                    android:text="@string/t_country_usa"
+                    android:textSize="@dimen/textsize_supersmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/igv_country_ao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/spacing_max"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_search_country_ao" />
+
+                <TextView
+                    style="@style/common_text_standard_style"
+                    android:text="@string/t_country_ao"
+                    android:textSize="@dimen/textsize_supersmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/igv_country_en"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/spacing_max"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_search_country_en" />
+
+                <TextView
+                    style="@style/common_text_standard_style"
+                    android:text="@string/t_country_en"
+                    android:textSize="@dimen/textsize_supersmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/igv_country_jp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/spacing_max"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_search_country_jp" />
+
+                <TextView
+                    style="@style/common_text_standard_style"
+                    android:text="@string/t_country_jp"
+                    android:textSize="@dimen/textsize_supersmall" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_min"
+            android:layout_marginLeft="@dimen/button_height"
+            android:layout_marginRight="@dimen/button_height"
+            android:layout_marginTop="30dp" >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_min"
+                android:background="@drawable/ic_edit_login_bg"
+                android:gravity="center"
+                android:text="@string/t_search_area_select"
+                android:textColor="@color/pic_text_orange"
+                android:textSize="@dimen/textsize_little" />
+
+            <ImageView
+                android:layout_width="@dimen/spacing_normalplus"
+                android:layout_height="@dimen/spacing_normalplus"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/spacing_max"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_arrow_to_below_yellow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_min"
+            android:layout_marginLeft="@dimen/button_height"
+            android:layout_marginRight="@dimen/button_height"
+            android:layout_marginTop="30dp" >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_min"
+                android:background="@drawable/ic_edit_login_bg"
+                android:gravity="center"
+                android:text="@string/t_search_property_type"
+                android:textColor="@color/pic_text_orange"
+                android:textSize="@dimen/textsize_little" />
+
+            <ImageView
+                android:layout_width="@dimen/spacing_normalplus"
+                android:layout_height="@dimen/spacing_normalplus"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/spacing_max"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_arrow_to_below_yellow" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/common_text_standard_style"
+            android:layout_marginTop="@dimen/spacing_larger"
+            android:text="@string/t_search_price_scope"
+            android:textSize="@dimen/textsize_min" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="$0万"
+                android:textColor="@color/pic_text_orange"
+                android:textSize="@dimen/textsize_min" />
+
+            <SeekBar
+                android:id="@+id/sb_price_area"
+                style="@style/Widget.SeekBar.Normal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_price"
+                android:layout_marginLeft="@dimen/button_height"
+                android:layout_marginRight="@dimen/button_height"
+                android:max="100" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/sb_price_area"
+                android:layout_marginRight="@dimen/button_height"
+                android:text="不限"
+                android:textColor="@color/pic_text_orange"
+                android:textSize="@dimen/textsize_min" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/sb_price_area"
+                android:layout_marginLeft="@dimen/button_height"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="@color/pic_text_orange"
+                android:textSize="@dimen/textsize_min" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_min"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/spacing_larger"
+        android:layout_marginLeft="@dimen/button_height"
+        android:layout_marginRight="@dimen/button_height"
+        android:background="@drawable/button_common"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/pic_text_orange_gray"
+        android:textSize="@dimen/textsize_little" />
+
+    <ImageView
+        android:id="@+id/igv_close"
+        android:layout_width="@dimen/spacing_normalplus"
+        android:layout_height="@dimen/spacing_normalplus"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/spacing_normalplus"
+        android:layout_marginTop="@dimen/spacing_max"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_search_x" />
+
+</RelativeLayout>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        layout="@layout/title_imagebutton" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray" >
+
+        <ScrollView
+            android:id="@+id/slv_context"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_gray"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="@dimen/spacing_min"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_min"
+                        android:gravity="center_vertical"
+                        android:text="账户设置"
+                        android:textSize="@dimen/textsize_normalplus" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="@dimen/spacing_min"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_min"
+                        android:gravity="center_vertical"
+                        android:text="修改邮箱"
+                        android:textSize="@dimen/textsize_normalplus" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="@dimen/spacing_min"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_min"
+                        android:gravity="center_vertical"
+                        android:text="货币单位"
+                        android:textSize="@dimen/textsize_normalplus" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/spacing_normalplus"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:background="@color/line_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="@dimen/spacing_min"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_min"
+                        android:gravity="center_vertical"
+                        android:text="清除缓存"
+                        android:textSize="@dimen/textsize_normalplus" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/spacing_normalplus"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:background="@color/line_light"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="@dimen/spacing_min"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_min"
+                        android:drawableRight="@drawable/arrow_right_gray"
+                        android:gravity="center_vertical"
+                        android:text="建议反馈"
+                        android:textSize="@dimen/textsize_normalplus" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_gray"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="@dimen/spacing_min"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:gravity="center_vertical"
+                        android:text="功能开启"
+                        android:textSize="@dimen/textsize_normalplus" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_light" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="消息推送"
+                        android:textSize="@dimen/textsize_normalplus" />
+
+                    <com.echuang.tianyuanhao.view.switchview.SwitchButton
+                        android:id="@+id/sb_info_push"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        app:onColor="@color/green" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/spacing_normalplus"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:background="@color/line_light" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="指纹解锁"
+                        android:textSize="@dimen/textsize_normalplus" />
+
+                    <com.echuang.tianyuanhao.view.switchview.SwitchButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        app:onColor="@color/green" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/spacing_normalplus"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:background="@color/line_light" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="手势密码"
+                        android:textSize="@dimen/textsize_normalplus" />
+
+                    <com.echuang.tianyuanhao.view.switchview.SwitchButton
+                        android:id="@+id/sb_gesture_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        app:onColor="@color/green" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/spacing_normalplus"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:background="@color/line_light"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_white_item"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/common_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="摇一摇查收益"
+                        android:textSize="@dimen/textsize_normalplus" />
+
+                    <com.echuang.tianyuanhao.view.switchview.SwitchButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        app:onColor="@color/green" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_light" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_exit_system"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_min"
+            android:layout_below="@+id/slv_context"
+            android:layout_marginLeft="@dimen/button_height"
+            android:layout_marginRight="@dimen/button_height"
+            android:layout_marginTop="@dimen/edittext_min"
+            android:background="@drawable/button_select_blackwhite"
+            android:gravity="center"
+            android:text="退出账号"
+            android:textColor="@color/pic_text_orange"
+            android:textSize="@dimen/textsize_min" />
+    </RelativeLayout>
+
+</LinearLayout>

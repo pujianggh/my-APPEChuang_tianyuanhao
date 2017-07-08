@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 主题背景颜色 -->
+    <solid android:color="@color/item_pressed" >
+    </solid>
+    <!-- 圆角值 -->
+    <corners
+        android:bottomLeftRadius="@dimen/spacing_eight"
+        android:bottomRightRadius="@dimen/spacing_eight"
+        android:topLeftRadius="@dimen/spacing_eight"
+        android:topRightRadius="@dimen/spacing_eight" />
+
+</shape>

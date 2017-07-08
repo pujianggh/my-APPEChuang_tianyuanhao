@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_title" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/fang" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_bg" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_normal" >
+
+            <TextView
+                style="@style/custom_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:text="2510 3rd St"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/textsize_normalplus" />
+
+            <TextView
+                style="@style/custom_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:text="Houston, USA"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/textsize_normalplus" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_myhome_info" />
+    </RelativeLayout>
+
+    
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_max"
+            android:gravity="center_horizontal"
+            android:text="出售价格"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/spacing_larger" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:gravity="center_horizontal"
+            android:text="写出你心中的价位"
+            android:textSize="@dimen/textsize_little" />
+ 
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:background="@color/text_lightgray"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/ll_two_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing_min"
+                android:text="预计毛回报率"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/textsize_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing_min"
+                android:text="0.0%"
+                android:textSize="@dimen/spacing_larger" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/spacing_min"
+            android:layout_marginTop="@dimen/spacing_min"
+            android:background="@color/text_lightgray"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing_min"
+                android:text="预计净回报率"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/textsize_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing_min"
+                android:text="0.0%"
+                android:textSize="@dimen/spacing_larger" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_confirm_sell"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="@dimen/spacing_min"
+        android:layout_marginLeft="@dimen/spacing_max"
+        android:layout_marginRight="@dimen/spacing_max"
+        android:layout_marginTop="@dimen/spacing_max"
+        android:background="@drawable/confirm_buy"
+        android:text="确认出售"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/textsize_title" />
+
+</LinearLayout>

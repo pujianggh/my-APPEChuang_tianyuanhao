@@ -1,0 +1,353 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.echuang.tianyuanhao"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="23" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <!-- 项目要求的权限，如访问网络等 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 添加友盟后增加的权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <application
+        android:name=".application.AppAppliction"
+        android:allowBackup="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- UMENG_APPKEY 57d7999ce0f55af181002112 4eaee02c527015373b000003 -->
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="X1GQla92udsGp5ynaMdhGBVrlW0jQof9" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57d7999ce0f55af181002112" >
+        </meta-data>
+
+        <!-- 启动页 -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/BackgroundTheme"
+            android:windowSoftInputMode="adjustNothing|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" /> <!-- 显示数据 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" /> <!-- 定义成浏览器类型，有URL需要处理时会过滤 -->
+            </intent-filter>
+        </activity>
+
+        <!-- 友盟分享配置 -->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        
+        <!-- 微信分享 -->
+        <activity
+            android:name="com.umeng.soexample.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 新浪博客分享 -->
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" >
+        </service>
+
+        <!-- 主页面 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteBackgroundTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 登录 -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityDialog"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <!-- 引导页 -->
+        <activity
+            android:name=".activity.GuideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/BackgroundTheme"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+
+        <!-- 注册 -->
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityDialog"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <!-- 系统设置 -->
+        <activity
+            android:name=".activity.SystemSetActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityDialog"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" />
+
+        <!-- 设置手势密码 -->
+        <activity
+            android:name=".gesture.GestureEditActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <!-- 验证手势密码 -->
+        <activity
+            android:name=".gesture.GestureVerifyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <!-- 忘记手势密码 -->
+        <activity
+            android:name=".gesture.ForgetPasswordActivity"
+            android:configChanges="keyboardHidden|orientation|fontScale|locale|screenSize"
+            android:excludeFromRecents="true"
+            android:theme="@style/passwordDialog"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- 通用WEB展示 -->
+        <activity
+            android:name=".activity.CommonWebActivity"
+            android:hardwareAccelerated="false"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBackgroundTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <!-- 资产排名 -->
+        <activity
+            android:name=".activity.AssetsRankActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBackgroundTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 我的收藏 -->
+        <activity
+            android:name=".activity.MyStoreUpActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBackgroundTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" />
+
+        <!-- 资产详情管理 -->
+        <activity
+            android:name=".activity.EarningManageActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBackgroundTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" />
+
+        <!-- 资产详情管理 -->
+        <activity
+            android:name=".activity.SearchActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityDialog"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" />
+
+        <!-- 查询结果数据展示 -->
+        <activity
+            android:name=".activity.SearchResultActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityDialog"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" />
+
+        <!-- 查询结果数据展示 -->
+        <activity
+            android:name=".activity.PropertyDetailsActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityDialog"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" />
+
+        <!-- 查询结果数据展示 -->
+        <activity
+            android:name=".activity.earning.PropertyInfoActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityDialog"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" />
+
+        <!-- 我的-交易动态 -->
+        <activity
+            android:name=".activity.my.MyDealStateActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBackgroundTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" />
+
+        <!-- 我的-资料完善（身份认证） -->
+        <activity
+            android:name=".activity.my.PerfectDataActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBackgroundTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" />
+
+        <!-- 我的-提现 -->
+        <activity
+            android:name=".activity.my.MyWithdrawActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBackgroundTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" />
+
+        <!-- 我的-明细 -->
+        <activity
+            android:name=".activity.my.MyDealDetailsActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBackgroundTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" />
+        
+        <!-- 添加您海外购置的房产 -->
+        <activity
+            android:name=".activity.AddYouHouseActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBackgroundTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" />
+        
+        <activity android:name="com.echuang.tianyuanhao.activity.ShareActivity" >
+        </activity>
+        <activity android:name="com.echuang.tianyuanhao.activity.CollectActivity" >
+        </activity>
+        <activity android:name="com.echuang.tianyuanhao.activity.ShopCardActivity" >
+        </activity>
+        <activity android:name="com.echuang.tianyuanhao.activity.KnowMoreActivity" >
+        </activity>
+        <activity android:name="com.echuang.tianyuanhao.activity.manager.detail.EarningManagerSellHouseActivity" >
+        </activity>
+        <activity android:name="com.echuang.tianyuanhao.activity.manager.detail.EarningManagerServiceStateActivity" >
+        </activity>
+        <activity android:name="com.echuang.tianyuanhao.activity.manager.detail.EarningManagerServiceStateAnotherActivity" >
+        </activity>
+        <activity android:name="com.echuang.tianyuanhao.activity.manager.detail.CallManagerActivity" >
+        </activity>
+        <!-- 加上style  解决跳转的时候的白屏 -->
+        <activity android:name="com.echuang.tianyuanhao.activity.VideoPlayActivity" 
+            android:theme="@style/AppTheme"
+            >
+        </activity>
+        <activity android:name="com.echuang.tianyuanhao.activity.AboutWeActivity" >
+        </activity>
+        <activity android:name="com.echuang.tianyuanhao.activity.HouseClerkActivity" >
+        </activity>
+        <activity android:name="com.echuang.tianyuanhao.activity.earning.RenterManagerActivity" >
+        </activity>
+        <activity android:name="com.echuang.tianyuanhao.activity.TestActivity" >
+        </activity>
+        <activity android:name="com.echuang.tianyuanhao.activity.LinkActivity"></activity>
+        <activity android:name="com.echuang.tianyuanhao.activity.PdfAActivity"></activity>
+        <activity android:name="com.echuang.tianyuanhao.activity.PdfBActivity"></activity>
+        
+        <!-- 关于okhttp上传下载统一管理的服务 -->
+        <service android:name="com.lzy.okhttpserver.download.DownloadService"/>
+        
+    </application>
+
+</manifest>

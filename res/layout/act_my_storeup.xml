@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        layout="@layout/title_imagebutton" />
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:padding="@dimen/spacing_min" >
+
+            <TextView
+                android:id="@+id/tv_earn_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="address"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_title" />
+
+            <TextView
+                android:id="@+id/tv_earn_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_earn_address"
+                android:text="address"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_normal" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rectangle_house" >
+
+                <ImageView
+                    android:id="@+id/iv_house_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/spacing_min"
+                    android:src="@drawable/house_card" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/iv_house_card"
+                    android:lines="1"
+                    android:text="我的产证"
+                    android:textColor="@color/orange" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/fang" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_bg" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_normal" >
+
+            <TextView
+                style="@style/custom_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:text="2510 3rd St"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/textsize_normalplus" />
+
+            <TextView
+                style="@style/custom_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:text="Houston, USA"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/textsize_normalplus" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_myhome_info" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_min"
+        android:gravity="center_horizontal"
+        android:text="累积净收入"
+        android:textColor="#6666"
+        android:textSize="@dimen/textsize_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_normal"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:gravity="center_horizontal"
+        android:text="$1634"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_house_earn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_gray"
+        android:padding="@dimen/spacing_normal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="2016"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+
+            <TextView
+                android:id="@+id/iv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rectangle_total"
+                android:text="  Total"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_min"
+                android:layout_toRightOf="@+id/iv_total"
+                android:text="$1634" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/expendlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ExpandableListView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <com.echuang.tianyuanhao.listview.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include layout="@layout/layout_refresh_head_none" />
+
+            <com.echuang.tianyuanhao.listview.PullableListView
+                android:id="@+id/listView_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:overScrollMode="never"
+                android:visibility="gone" >
+            </com.echuang.tianyuanhao.listview.PullableListView>
+        </com.echuang.tianyuanhao.listview.PullToRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/lly_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_height"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/common_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_height"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:gravity="center_vertical"
+                android:text="售价" />
+
+            <TextView
+                style="@style/common_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_height"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:gravity="center_vertical"
+                android:text="租金" />
+
+            <TextView
+                style="@style/common_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_height"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:gravity="center_vertical"
+                android:text="毛回报率" />
+
+            <TextView
+                style="@style/common_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_height"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:gravity="center_vertical"
+                android:text="预计净收益" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
